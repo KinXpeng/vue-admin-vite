@@ -1,0 +1,12 @@
+{
+	"recommendations": [
+		"Vue.volar",
+		"EditorConfig.EditorConfig",
+		"dbaeumer.vscode-eslint",
+		"maggie.eslint-rules-zh-plugin",
+		"usernamehw.errorlens",
+		"esbenp.prettier-vscode",
+		"antfu.unocss",
+		"Vue.vscode-typescript-vue-plugin"
+	]
+}

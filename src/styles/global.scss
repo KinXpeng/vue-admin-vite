@@ -1,0 +1,49 @@
+html,
+body,
+#app {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html.dark {
+	background: #282c34;
+	color-scheme: dark;
+}
+
+#nprogress {
+	pointer-events: none;
+}
+
+#nprogress .bar {
+	background: rgb(20, 171, 235);
+	opacity: 0.75;
+	position: fixed;
+	z-index: 1031;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+}
+
+.shadow-bt-dark {
+	box-shadow: 4px 2px 4px rgb(8, 36, 88);
+}
+.shadow-bt-light {
+	box-shadow: 0 2px 10px rgb(0 21 41 / 14%);
+}
+
+.shadow-br-dark {
+	box-shadow: 2px 4px 4px rgb(8, 36, 88);
+}
+.shadow-br-light {
+	box-shadow: 2px 0 10px rgb(0 21 41 / 14%);
+}
+
+.border-circle {
+	border-radius: 50%;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title><%- title %></title>
+		<script>
+			;(function () {
+				const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+				const setting = localStorage.getItem('North-theme') || 'auto'
+				if (setting === 'dark' || (prefersDark && setting !== 'light'))
+					document.documentElement.classList.toggle('dark', true)
+			})()
+		</script>
+	</head>
+	<body class="font-sans text-gray-700 dark:text-gray-200">
+		<div id="app">
+			<style>
+				* {
+					margin: 0;
+					padding: 0;
+				}
+				#app {
+					height: 100vh;
+					background: url(./src/assets/images/loading.gif) no-repeat center center/18%;
+				}
+			</style>
+		</div>
+		<script type="module" src="/src/main.ts"></script>
+	</body>
+</html>
