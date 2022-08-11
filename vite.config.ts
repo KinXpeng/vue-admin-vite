@@ -62,6 +62,9 @@ export default ({ mode }: { mode: string }) => {
 					rewrite: (path) => path.replace(/^\/api/, '')
 				}
 			}
+		},
+		build: {
+			outDir: 'docs' // 打包后文件包名称
 		}
 	})
 }
