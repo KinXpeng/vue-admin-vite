@@ -79,10 +79,12 @@ const handleClickRemoveTab = (name: TabPanelName) => {
   line-height: 30px;
   font-weight: normal;
   box-shadow: 0 0 4px rgb(16 72 157 / 12%);
+  transition: none !important;
   span {
     position: relative;
     top: 1px;
   }
+  // 关闭按钮
   .is-icon-close {
     display: none;
     position: absolute;
