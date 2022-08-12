@@ -23,6 +23,7 @@
 <script lang="ts" setup>
 import type { RouteMeta, RouteRecordRaw } from "vue-router";
 import { Icon } from "@iconify/vue";
+
 interface Props {
   route: RouteRecordRaw;
 }

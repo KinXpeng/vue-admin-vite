@@ -49,7 +49,7 @@ const { collapse } = storeToRefs(useSettingStore());
 
 <style scoped lang="scss">
 .app-menu {
-  transition: 0.3s all;
+  // transition: 0.1s all;
   height: 100vh;
 }
 .app-main {
@@ -60,10 +60,10 @@ const { collapse } = storeToRefs(useSettingStore());
 }
 
 .main-enter-active {
-  transition: 0.2s;
+  transition: none;
 }
 .main-leave-active {
-  transition: 0.15s;
+  transition: none;
 }
 .main-enter-from {
   opacity: 0;
