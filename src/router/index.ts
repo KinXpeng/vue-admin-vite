@@ -4,7 +4,7 @@ import nprogress from 'nprogress'
 import routes from './modules'
 
 const router = createRouter({
-	history: createWebHistory(),
+	history: createWebHashHistory(),
 	routes
 })
 
