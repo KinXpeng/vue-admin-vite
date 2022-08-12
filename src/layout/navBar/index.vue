@@ -33,7 +33,22 @@
         </div>
         <breadcrumb></breadcrumb>
       </div>
-      <toggle-theme></toggle-theme>
+      <div flex>
+        <div
+          flex
+          items-center
+          w40px
+          h40px
+          justify-center
+          hover="bg-[#dfefff] dark:bg-black"
+          cursor-pointer
+          mr-1
+          class="border-circle"
+        >
+          <i-uiw:github cursor="pointer" @click="handleTargetGit" />
+        </div>
+        <toggle-theme></toggle-theme>
+      </div>
     </nav>
   </div>
   <tabs></tabs>
@@ -52,6 +67,10 @@ const toggleCollapse = () => {
 };
 
 const { dark } = useDark();
+
+const handleTargetGit = () => {
+  window.open("https://github.com/KinXpeng/vue-admin-vite");
+};
 </script>
 
 <style></style>

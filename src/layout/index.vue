@@ -2,7 +2,7 @@
   <div flex bg="dark:[#282c34] [#f1f1f1]">
     <div
       class="app-menu"
-      :class="[collapse ? 'w-65px' : 'w-250px']"
+      :class="[collapse ? 'w-64px' : 'w-250px']"
       bg="dark:[#001529] [#ffffff]"
     >
       <side-bar></side-bar>

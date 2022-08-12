@@ -22,6 +22,7 @@ declare module '@vue/runtime-core' {
     'IMaterialSymbols:home': typeof import('~icons/material-symbols/home')['default']
     IRiMoonLine: typeof import('~icons/ri/moon-line')['default']
     IRiSunLine: typeof import('~icons/ri/sun-line')['default']
+    'IUiw:github': typeof import('~icons/uiw/github')['default']
     'IZondicons:indentDecrease': typeof import('~icons/zondicons/indent-decrease')['default']
     'IZondicons:indentIncrease': typeof import('~icons/zondicons/indent-increase')['default']
     RouterLink: typeof import('vue-router')['RouterLink']

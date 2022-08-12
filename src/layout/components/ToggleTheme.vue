@@ -9,9 +9,10 @@
     cursor-pointer
     mr-5
     class="border-circle"
+    @click="dark ? removeDark() : setDark()"
   >
-    <i-ri-moon-line cursor="pointer" v-show="dark" @click="removeDark" />
-    <i-ri-sun-line cursor="pointer" v-show="!dark" @click="setDark" />
+    <i-ri-moon-line cursor="pointer" v-show="dark" />
+    <i-ri-sun-line cursor="pointer" v-show="!dark" />
   </div>
 </template>
 
