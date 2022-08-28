@@ -3,11 +3,15 @@
     v-model="router.currentRoute.value.path"
     type="border-card"
     :class="dark ? 'dark-item app-tabs' : 'app-tabs'"
-    :closable="tabsList.length > 1 ? true : false"
     @tab-click="handleClickTab"
     @tab-remove="handleClickRemoveTab"
   >
-    <el-tab-pane v-for="item in tabsList" :key="item.path" :name="item.path">
+    <el-tab-pane
+      v-for="item in tabsList"
+      :closable="item.path != '/home'"
+      :key="item.path"
+      :name="item.path"
+    >
       <template #label>
         <span>{{ item.title }}</span>
       </template>

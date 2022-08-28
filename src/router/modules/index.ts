@@ -5,12 +5,12 @@ import Layout from '~/layout/index.vue'
 const pages: RouteRecordRaw[] = [
 	{
 		path: '/',
-		redirect: '/work'
+		redirect: '/main'
 	},
 	{
-		path: '/work',
-		name: 'Work',
-		redirect: '/workbench',
+		path: '/main',
+		name: 'main',
+		redirect: '/home',
 		component: Layout,
 		meta: {
 			hidden: false,
@@ -19,13 +19,13 @@ const pages: RouteRecordRaw[] = [
 		},
 		children: [
 			{
-				path: '/workbench',
-				name: 'Workbench',
-				component: () => import('~/pages/workbench/index.vue'),
+				path: '/home',
+				name: 'home',
+				component: () => import('~/pages/home/index.vue'),
 				meta: {
 					hidden: false,
 					icon: 'charm:apps-plus',
-					title: '工作台'
+					title: '主页'
 				}
 			}
 		]

@@ -49,7 +49,7 @@ const { collapse } = storeToRefs(useSettingStore());
 
 <style scoped lang="scss">
 .app-menu {
-  // transition: 0.1s all;
+  transition: 0.1s all;
   height: 100vh;
 }
 .app-main {
